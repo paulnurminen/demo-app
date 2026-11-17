@@ -4,6 +4,8 @@ metadata:
   name: landing-page
   labels:
     app.kubernetes.io/name: landing-page
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
   type: LoadBalancer
   selector:
